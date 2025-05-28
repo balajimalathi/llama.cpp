@@ -69,3 +69,9 @@ jobs:
           name: libllama-android-arm64
           path: build-android/bin/libllama.so
           retention-days: 30
+      - name: Upload libggml.so artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: libggml-android-arm64
+          path: build-android/bin/libggml.so
+          retention-days: 30
